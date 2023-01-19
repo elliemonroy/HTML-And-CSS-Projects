@@ -1,0 +1,23 @@
+table {
+   border: 3px solid black;
+}
+
+td:hover {
+   background-color: pink;
+   color: black;
+}
+
+tr, th {
+   background-color: black;
+   color: ;
+   font-family:Lucida Handwriting;
+}
+
+tr, td {
+   background-color: yellow;
+   color: crimson;
+}
+
+td {
+   text-align: center;
+   }
