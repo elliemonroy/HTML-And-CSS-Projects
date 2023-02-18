@@ -1,6 +1,7 @@
 body {
     font-size:large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
 input {
@@ -9,3 +10,146 @@ input {
     border: 1px solid black;
     border-radius: 10px;
 }
+
+html {
+    box-sizing: border-box;
+  }
+  
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+  
+  /* This styles the previews here, using flex to display the images 
+     "responsively". */
+  
+  .preview {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .row > .col {
+    padding: 0 8px;
+  }
+  
+  .col {
+    float: left;
+    width: 25%;
+  }
+  
+  /*Left display as none because I'll change display property with JavaScript. */
+     
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 62px 0px 62px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0 0 0 0;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  /* Same with the slides, set the display to none, because i want to choose which 
+     one is shown at a time. */
+  
+  .slide {
+    display: none;
+  }
+  
+  .image-slide {
+    width: 100%;
+  }
+  
+  .modal-preview {
+    width: 100%;
+  }
+  
+  .dots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  /* The previews will show a little transparent to show that they are "inactive" */
+  
+  img.preview, img.modal-preview {
+    opacity: 0.6;
+  }
+  
+  img.active,
+  .preview:hover,
+  .modal-preview:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  } 
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .previous,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .previous:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
