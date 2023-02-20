@@ -65,8 +65,8 @@ html {
     justify-content: center;
     margin: auto;
     padding: 0 0 0 0;
-    width: 80%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 600px;
   }
   
   /* Same with the slides, set the display to none, because i want to choose which 
