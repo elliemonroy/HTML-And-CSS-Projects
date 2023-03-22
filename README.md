@@ -1,19 +1,30 @@
 # HTML-and-CSS-Projects
-This will contain my HTML and CSS projects.
+This contains my HTML and CSS projects.
 
-Projects:
+<b>Projects:</b>
+<br>
 Food tours site
+<br>
 Drako Outfitters site
+<br>
 One page website 
+<br><br>
 
-Food tour site
+<b>Food tour site</b>
+<br>
 This page is an example home page for a food tour that is styled using Boostrap 4.
+<br>
 It includes navbar, form, cards, dropdowns, jumbotron and more.
+<br><br>
 
-Drako Outfitters site
+<b>Drako Outfitters site</b>
+<br>
 This page is an example home page for a dog clothing company. It's styled using CSS and it contains a navbar, image containers and a form.
+<br><br>
 
-One page site
+<b>One page site</b>
+<br>
 This page is an example home page to book a getaway retreat. It's styled using mostly HTML. 
+<br>
 It has a gallery, form, navbar, and a video.  
 
